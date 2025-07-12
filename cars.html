@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>DiamondCut Motors</title>
+      <link rel="icon" type="image/png" href="assets/logo.png"/>
+      <link rel="stylesheet" href="cars.css">
+   </head>
+   <body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="logo">
+        </div>
+        <div class="container">
+            <a href="register.html" class="button-link"><button>Sign In</button></a>
+        </div>
+        <div class="navbar">
+            <img id="clickableImage" src="assets/navbar/navbar.png" alt="navbar">
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"></label>
+            
+            <div class="wrapper" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cars.html">Cars Collection</a></li>
+                    <li><a href="showroom.html">Showroom</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero-section">
+            <img src="assets/startPage/cars.png" alt="Background Image" class="background-image">
+            <div class="hero-text">
+                <h1>Cars Collection</h1>
+                <p>Explore Our Collection, Ignite Your Drive</p>
+            </div>
+        </div> 
+    
+        <div class="carsCollec">
+            <h3>Our Premium Brand</h3>
+            <div class="brands">
+                <div class="brand-box"><img src="assets/car logo/bentley.png" alt="bentley"></div>
+                <div class="brand-box"><img src="assets/car logo/audi.png" alt="audi"></div>
+                <div class="brand-box"><img src="assets/car logo/mercedes.png" alt="mercedes"></div>
+                <div class="brand-box"><img src="assets/car logo/bmw.png" alt="bmw"></div>
+                <div class="brand-box"><img src="assets/car logo/ford.png" alt="ford"></div>
+                <div class="brand-box"><img src="assets/car logo/tesla.png" alt="tesla"></div>
+                <div class="brand-box"><img src="assets/car logo/porsche.png" alt="porsche"></div>
+            </div>
+            <div class="more-brands">
+                <div class="brand-box"><img src="assets/car logo/ferrari.png" alt="Ferrari"></div>
+                <div class="brand-box"><img src="assets/car logo/licoln.png" alt="licoln"></div>
+                <div class="brand-box"><img src="assets/car logo/jaguar.png" alt="jaguar"></div>
+                <div class="brand-box"><img src="assets/car logo/lamborghini.png" alt="lamborghini"></div>
+                <div class="brand-box"><img src="assets/car logo/aston martin.png" alt="aston martin"></div>
+                <div class="brand-box"><img src="assets/car logo/rolls royce.png" alt="rolls royce"></div>
+                <div class="brand-box"><img src="assets/car logo/volkswagen.png" alt="volkswagen"></div>
+            </div>
+            <div class="toggle-button" onclick="toggleBrands()">▼</div>
+        </div>
+
+        <div class="slider-wrapper">
+            <h1>New Vehicles</h1>
+            <div class="slider-container">
+                <button class="prev" onclick="moveSlide(-1, 'new')">&#10094;</button>
+                <div class="slider new">
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/newVehicles/nx 350h lexus.png" alt="Car 1">
+                            <div class="card-content">
+                                <p class="brand">Lexus</p>
+                                <p class="price">$42,655</p>
+                                <p class="model">NX 350h Luxury</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/newVehicles/rx 350h lexus.png" alt="Car 2">
+                            <div class="card-content">
+                                <p class="brand">Lexus</p>
+                                <p class="price">$63,986</p>
+                                <p class="model">RX 350h Luxury</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/newVehicles/bmw x3.png" alt="Car 3">
+                            <div class="card-content">
+                                <p class="brand">BMW</p>
+                                <p class="price">$71,786</p>
+                                <p class="model">BMW X3 xDrive30i M Sport</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/newVehicles/mercedes eqb suv.png" alt="Car 4">
+                            <div class="card-content">
+                                <p class="brand">Mercedes Benz</p>
+                                <p class="price">$53,050</p>
+                                <p class="model">EQB SUV</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/newVehicles/mercedes eqs suv.png" alt="Car 5">
+                            <div class="card-content">
+                                <p class="brand">Mercedes Benz</p>
+                                <p class="price">$104,400</p>
+                                <p class="model">EQS SUV</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/newVehicles/tesla x.png" alt="Car 6">
+                            <div class="card-content">
+                                <p class="brand">Tesla</p>
+                                <p class="price">$63,990</p>
+                                <p class="model">Model X</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/newVehicles/tesla s.png" alt="Car 5">
+                            <div class="card-content">
+                                <p class="brand">Tesla</p>
+                                <p class="price">$63,990</p>
+                                <p class="model">Model S</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/newVehicles/mercedes maybach.png" alt="Car 6">
+                            <div class="card-content">
+                                <p class="brand">Mercedes Benz</p>
+                                <p class="price">$174,350</p>
+                                <p class="model">Mercedes-Maybach GLS SUV</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="next" onclick="moveSlide(1, 'new')">&#10095;</button>
+            </div>
+
+            <h1>Used Vehicles</h1>
+            <div class="slider-container">
+                <button class="prev" onclick="moveSlide(-1, 'used')">&#10094;</button>
+                <div class="slider used">
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/usedVehicles/mercedes maybach.png" alt="Car 5">
+                            <div class="card-content">
+                                <p class="brand">Mercedes Benz</p>
+                                <p class="price">$179,900</p>
+                                <p class="model">EQS SUV Maybach</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/usedVehicles/mercedes eqs.png" alt="Car 6">
+                            <div class="card-content">
+                                <p class="brand">Mercedes Benz</p>
+                                <p class="price">$104,400</p>
+                                <p class="model">EQS Sedan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/usedVehicles/bmw 320i.png" alt="Car 7">
+                            <div class="card-content">
+                                <p class="brand">BMW</p>
+                                <p class="price">$45,495</p>
+                                <p class="model">BMW 320i M Sport</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/usedVehicles/bmw 218i.png" alt="Car 8">
+                            <div class="card-content">
+                                <p class="brand">BMW</p>
+                                <p class="price">$39,395</p>
+                                <p class="model">BMW 218i Gran Coupe Sport</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/usedVehicles/aston martin db12.png" alt="Car 9">
+                            <div class="card-content">
+                                <p class="brand">Aston Martin</p>
+                                <p class="price">$248,086</p>
+                                <p class="model">DB12 Coupe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/usedVehicles/aston martin dbs.png" alt="Car 10">
+                            <div class="card-content">
+                                <p class="brand">Aston Martin</p>
+                                <p class="price">$422,086</p>
+                                <p class="model">DVS 770 Ultimate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/usedVehicles/lexus ux.png" alt="Car 9">
+                            <div class="card-content">
+                                <p class="brand">Lexus</p>
+                                <p class="price">$53,820</p>
+                                <p class="model">UX 250h Luxury</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="card">
+                            <img src="assets/usedVehicles/lexus rz.png" alt="Car 10">
+                            <div class="card-content">
+                                <p class="brand">Lexus</p>
+                                <p class="price">$59,850</p>
+                                <p class="model">RZ 450e Luxury</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="next" onclick="moveSlide(1, 'used')">&#10095;</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                    <img src="assets/logo.png" alt="Company Logo">
+                    <p>Experience unparalleled luxury and performance with our meticulously crafted vehicles, designed to elevate every journey.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><img src="assets/social/tiktok.png" alt="TikTok"></a>
+                        <a href="#"><img src="assets/social/x.png" alt="X"></a>
+                        <a href="#"><img src="assets/social/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2024 DiamondCut Motors.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+   </body>
+</html>

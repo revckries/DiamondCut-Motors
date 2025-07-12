@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiamondCut Motors</title>
+    <link rel="icon" type="image/png" href="assets/logo.png"/>
+    <link rel="stylesheet" href="regist.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container register-container">
+        <form id="register-form">
+          <h1>Register</h1>
+          <div class="form-control">
+            <input type="text" id="username" placeholder="Name" required />
+            <small id="username-error"></small>
+            <span></span>
+          </div>
+          <div class="form-control">
+            <input type="email" id="email" placeholder="Email" required />
+            <small id="email-error"></small>
+            <span></span>
+          </div>
+          <div class="form-control">
+            <input type="text" id="phone" placeholder="Phone Number" required />
+            <small id="phone-error"></small>
+            <span></span>
+          </div>
+          <div class="form-control">
+            <input type="password" id="password" placeholder="Password" required />
+            <small id="password-error"></small>
+            <span></span>
+          </div>
+          <div class="form-control">
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+            <small id="confirm-password-error"></small>
+            <span></span>
+          </div>
+          <div class="form-control terms">
+            <input type="checkbox" id="terms" required />
+            <label for="terms">I agree to the terms and services</a></label>
+            <small id="terms-error"></small>
+          </div>
+          <button type="submit" value="submit">Sign Up</button>
+        </form>
+      </div>
+
+      <div class="form-container login-container">
+        <form class="form-lg">
+          <h1>Profile</h1>
+          <div class="form-control2">
+            <input type="email" class="email-2" placeholder="Email" />
+            <small class="email-error-2"></small>
+            <span></span>
+          </div>
+          <div class="form-control2">
+            <input type="password" class="password-2" placeholder="Password" />
+            <small class="password-error-2"></small>
+            <span></span>
+          </div>
+
+          <div class="content">
+            <div class="checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox" />
+              <label for="checkbox">Remember</label>
+            </div>
+            <div class="pass-link">
+              <a href="#">Forget the password?</a>
+            </div>
+          </div>
+          <button type="submit" value="submit">Sign In</button>
+          <span>sign in with account</span>
+          <div class="social-container">
+            <a href="#"><img src="assets/social/apple.png" alt="Apple"></a>
+            <a href="#"><img src="assets/social/google.png" alt="Google"></a>
+            <a href="#"><img src="assets/social/facebook.png" alt="Facebook"></a>
+          </div>
+        </form>
+      </div>
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1 class="title">
+              Welcome to DiamondCut Motors
+            </h1>
+            <p>Already have an account?</p>
+            <button class="ghost" id="login">
+              Sign In
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </div>
+
+          <div class="overlay-panel overlay-right">
+            <h1 class="title">
+              Welcome to <br />
+              DiamondCut Motors
+            </h1>
+            <p>
+              Don't have an account?
+            </p>
+            <button class="ghost" id="register">
+              Sign Up
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>DiamondCut Motors</title>
+    <link rel="icon" type="image/png" href="assets/logo.png"/>
+    <link rel="stylesheet" href="showroom.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="logo">
+        </div>
+        <div class="container">
+            <a href="register.html" class="button-link"><button>Sign In</button></a>
+        </div>
+        <div class="navbar">
+            <img id="clickableImage" src="assets/navbar/navbar.png" alt="navbar">
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"></label>
+            
+            <div class="wrapper" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cars.html">Cars Collection</a></li>
+                    <li><a href="showroom.html">Showroom</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero-section">
+            <img src="assets/startPage/showroom.png" alt="Background Image" class="background-image">
+            <div class="hero-text">
+                <h1>Showroom</h1>
+                <p>Step In and Drive Out in Style</p>
+            </div>
+        </div> 
+
+        <div class="carsCollec">
+            <h3>Our Premium Brand</h3>
+            <div class="brands">
+            <div class="brand-box"><img src="assets/car logo/bentley.png" alt="bentley"></div>
+            <div class="brand-box"><img src="assets/car logo/audi.png" alt="audi"></div>
+            <div class="brand-box"><img src="assets/car logo/mercedes.png" alt="mercedes"></div>
+            <div class="brand-box"><img src="assets/car logo/bmw.png" alt="bmw"></div>
+            <div class="brand-box"><img src="assets/car logo/ford.png" alt="ford"></div>
+            <div class="brand-box"><img src="assets/car logo/tesla.png" alt="tesla"></div>
+            <div class="brand-box"><img src="assets/car logo/porsche.png" alt="porsche"></div>
+        </div>
+        <div class="more-brands">
+            <div class="brand-box"><img src="assets/car logo/ferrari.png" alt="Ferrari"></div>
+            <div class="brand-box"><img src="assets/car logo/licoln.png" alt="licoln"></div>
+            <div class="brand-box"><img src="assets/car logo/jaguar.png" alt="jaguar"></div>
+            <div class="brand-box"><img src="assets/car logo/lamborghini.png" alt="lamborghini"></div>
+            <div class="brand-box"><img src="assets/car logo/aston martin.png" alt="aston martin"></div>
+            <div class="brand-box"><img src="assets/car logo/rolls royce.png" alt="rolls royce"></div>
+            <div class="brand-box"><img src="assets/car logo/volkswagen.png" alt="volkswagen"></div>
+        </div>
+            <div class="toggle-button" onclick="toggleBrands()">▼</div>
+        </div>
+        
+        <h2>Gallery</h2>
+
+        <div class="carousel">
+            <div class="carousel__item carousel__item--left">
+            <img src="assets/carousel/carousel1.jpg" alt="carousel1">
+            </div>
+            <div class="carousel__item carousel__item--main">
+            <img src="assets/carousel/carousel2.jpg" alt="carousel2">
+            </div>
+            <div class="carousel__item carousel__item--right">
+            <img src="assets/carousel/carousel3.jpg" alt="carousel3">
+            </div>
+            <div class="carousel__item">
+            <img src="assets/carousel/carousel4.jpg" alt="carousel4">
+            </div>
+            <div class="carousel__item">
+            <img src="assets/carousel/carousel5.jpg" alt="carousel5">
+            </div>
+            <div class="carousel__item">
+            <img src="assets/carousel/carousel6.jpg" alt="carousel6">
+            </div>
+            <div class="carousel__btns">
+                <button class="carousel__btn" id="leftBtn">&lt;</button>
+                <button class="carousel__btn" id="rightBtn">&gt;</button>                
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="box box-1" style="--img: url(assets/gallery/car1.jpg);"></div>
+            <div class="box box-2" style="--img: url(assets/gallery/car2.jpg);"></div>
+            <div class="box box-3" style="--img: url(assets/gallery/car3.jpg);" ></div>
+            <div class="box box-4" style="--img: url(assets/gallery/car4.jpg);" ></div>
+            <div class="box box-5" style="--img: url(assets/gallery/car5.jpg);" ></div>
+        </div>  
+    </main>
+
+    <footer class="footer">
+      <div class="container-footer">
+          <div class="row">
+              <div class="footer-col">
+                  <img src="assets/logo.png" alt="Company Logo">
+                  <p>Experience unparalleled luxury and performance with our meticulously crafted vehicles, designed to elevate every journey.</p>
+              </div>
+              <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                      <li><a href="#">about us</a></li>
+                      <li><a href="#">our services</a></li>
+                      <li><a href="#">privacy policy</a></li>
+                      <li><a href="#">affiliate program</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">shipping</a></li>
+                      <li><a href="#">returns</a></li>
+                      <li><a href="#">order status</a></li>
+                      <li><a href="#">payment options</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                      <a href="#"><img src="assets/social/tiktok.png" alt="TikTok"></a>
+                      <a href="#"><img src="assets/social/x.png" alt="X"></a>
+                      <a href="#"><img src="assets/social/instagram.png" alt="Instagram"></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+        © 2024 DiamondCut Motors.
+      </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
